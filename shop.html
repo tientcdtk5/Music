@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Shopping Cart</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Nunito+Sans:wght@400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="shop.css" />
+  </head>
+
+  <body>
+    <main id="main">
+      <header class="container">
+        <h1>Shopping Cart</h1>
+
+        <ul class="breadcrumb">
+          <li>Home</li>
+          <li>Shopping Cart</li>
+        </ul>
+
+        <!-- Total product -->
+        <span class="count"><span class="value">0</span> items in the bag</span>
+      </header>
+      <div id="container_big">
+        <section class="container">
+          <ul class="products"></ul>
+        </section>
+
+        <section class="option-container container">
+          <!-- Mã giảm giá -->
+          <div class="promotion">
+            <label for="promo-code">Have A Promo Code?</label>
+            <input type="text" id="promo-code" autocomplete="off" />
+            <button type="button"></button>
+          </div>
+
+          <!-- Tổng tiền -->
+          <div class="summary">
+            <ul>
+              <li class="subtotal">Subtotal <span class="value">0</span></li>
+              <li class="vat">VAT<span class="value">0</span></li>
+              <li class="discount hide">
+                Discount<span class="value">0</span>
+              </li>
+              <li class="total">Total <span class="value">0</span></li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"
+      integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="shop.js"></script>
+  </body>
+</html>
